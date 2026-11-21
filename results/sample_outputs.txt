@@ -1,0 +1,26 @@
+=== OFFLINE EVALUATION RESULTS ===
+Precision@5: {'Popularity Baseline': 0.0, 'NLP Content-Based': 0.3714, 'Hybrid (NLP + Item-CF)': 0.2857}
+Item-CF Rating Prediction -> RMSE: 1.1461, MAE: 0.8929
+
+=== TEST CASE 1: Profile Match (Free-Text Bio) ===
+Input Bio: 'React frontend, responsive UI, REST API integration'
+  1. [G01] React Frontend Dashboard (Web Development) | Score: 0.5783 | Keywords: ['api integration', 'react', 'react frontend', 'ui rest']
+  2. [G37] Angular Enterprise CRM Frontend (Web Development) | Score: 0.3104 | Keywords: ['ui rest', 'frontend', 'responsive ui', 'responsive']
+  3. [G04] Full-Stack E-commerce Website (Web Development) | Score: 0.281 | Keywords: ['react frontend', 'react', 'frontend', 'responsive ui']
+  4. [G31] Next.js Portfolio & Blog Platform (Web Development) | Score: 0.2786 | Keywords: ['react', 'ui rest', 'rest', 'rest api']
+  5. [G19] Vue.js Admin Portal Integration (Web Development) | Score: 0.2049 | Keywords: ['integration', 'rest', 'rest api', 'api']
+
+=== TEST CASE 2: History Test (User U01 - Rated Mobile UI Design 5/5) ===
+  1. [G29] Mobile Food Delivery UI/UX Design (UI/UX Design) | Score: 0.6679 | Keywords: ['ux', 'mobile', 'design', 'ui']
+  2. [G20] Figma Design System for Mobile (UI/UX Design) | Score: 0.649 | Keywords: ['mobile ui', 'mobile', 'design', 'ui']
+  3. [G38] Mobile Banking App Usability Testing (UI/UX Design) | Score: 0.5906 | Keywords: ['mobile', 'ux', 'mobile ui', 'ui']
+  4. [G35] Product Packaging & Label Design (Graphic Design) | Score: 0.4345 | Keywords: ['design', 'design design']
+  5. [G27] Social Media Ad Campaign Graphics (Graphic Design) | Score: 0.4262 | Keywords: ['design', 'design design']
+
+=== TEST CASE 3: Cold-Start Test (New Gig G41 with 0 Ratings) ===
+Query: 'React frontend, responsive UI, REST API integration'
+  1. [G41] React SaaS Analytics Frontend | Score: 0.6582 | Keywords: ['frontend', 'react frontend', 'frontend responsive', 'react'] <-- NEW COLD-START GIG
+  2. [G01] React Frontend Dashboard | Score: 0.5189 | Keywords: ['react', 'api integration', 'react frontend', 'ui rest']
+  3. [G37] Angular Enterprise CRM Frontend | Score: 0.282 | Keywords: ['responsive ui', 'ui rest', 'frontend', 'responsive']
+  4. [G31] Next.js Portfolio & Blog Platform | Score: 0.2531 | Keywords: ['react', 'ui rest', 'rest api', 'rest']
+  5. [G04] Full-Stack E-commerce Website | Score: 0.2506 | Keywords: ['react', 'react frontend', 'frontend', 'responsive ui']
